@@ -1,0 +1,73 @@
+Fluxo de Caixa — Gestao de Dados
+================================
+
+COMO USAR
+---------
+1. Extraia esta pasta inteira para um local fixo (ex.: C:\FluxoCaixa\)
+2. Abra uma vez pelo arquivo "Fluxo de Caixa.vbs" dentro desta pasta
+3. Copie "Atalho - Fluxo de Caixa.vbs" para a Area de Trabalho
+4. Da proxima vez, use so o atalho na Area de Trabalho
+
+Os arquivos .dll e .xlsx ficam na pasta de instalacao.
+O atalho .vbs pode ficar em qualquer lugar.
+
+ALTERNATIVA (sem registro do Windows)
+-------------------------------------
+Ao lado do atalho .vbs, crie um arquivo texto chamado:
+
+  fluxo-caixa.path
+
+Com uma unica linha, o caminho da pasta de instalacao, por exemplo:
+
+  C:\FluxoCaixa
+
+REQUISITOS
+----------
+- Microsoft Excel (2016 ou superior)
+- VSTO Runtime e WebView2 (geralmente ja instalados com Office/Windows)
+
+Se aparecer erro de confianca na primeira vez:
+- Execute uma vez: Configurar (como administrador).bat
+
+IMPORTANTE
+----------
+- Nao mova so o .xlsx — mantenha a pasta de instalacao intacta
+- Prefira abrir pelo atalho "Fluxo de Caixa.vbs" — ele configura o Excel
+  e abre a planilha normalmente, junto com as outras planilhas ja abertas
+
+CONVIVENCIA COM OUTRAS PLANILHAS
+--------------------------------
+O Fluxo de Caixa abre como qualquer outra planilha do Excel.
+Ele NAO fecha, move nem esconde documentos que voce ja tem abertos:
+
+- Pode trabalhar com varias planilhas ao mesmo tempo
+- Ao abrir o Fluxo com outras planilhas abertas, a janela do Excel
+  permanece visivel (a interface do Fluxo abre por cima)
+- A interface abre sozinha no inicio. Se ela nao aparecer, use o botao
+  "Abrir Fluxo de Caixa", na primeira linha da planilha base
+- Fechar a interface do Fluxo encerra apenas a planilha Fluxo_Caixa
+
+Se outra pessoa estiver com o mesmo arquivo aberto, ele abre somente
+leitura, como em qualquer planilha compartilhada.
+
+ABA "FLUXO DE CAIXA" NA FITA (RIBBON)
+-------------------------------------
+Com a planilha do Fluxo aberta, aparece a aba "Fluxo de Caixa"
+antes da guia Inicio, com dois grupos de comandos:
+
+Interface:
+- Abrir Formulário: reabre a tela de gestão (a mesma que abre no inicio)
+- Mostrar Planilha: traz a janela do Excel de volta quando o
+  formulário estiver cobrindo a base
+- Ajuda: resumo rapido dos comandos
+
+Planilha:
+- Salvar: recalcula as formulas e salva a pasta de trabalho
+- Recalcular: recalcula todas as formulas sem salvar
+
+Também fica disponível o botão "Abrir Fluxo de Caixa" na primeira
+linha da planilha, à direita dos dados (criado em cada abertura).
+
+SUPORTE
+-------
+Em caso de erro, anote a mensagem exibida e contacte quem enviou o pacote.

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fluxo de Caixa — Gestão de Dados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="canvas">
+    <div class="layout">
+      <aside class="sidebar glass">
+        <div class="brand">
+          <span class="brand-icon">FC</span>
+          <div>
+            <div class="brand-title">Fluxo de Caixa</div>
+            <div class="brand-sub">Gestão por unidade</div>
+          </div>
+        </div>
+        <div class="sidebar-section sidebar-section-unidades">
+          <div class="unit-picker">
+            <label class="unit-picker-label" for="unitPicker">Unidade</label>
+            <select id="unitPicker" class="unit-picker-select">
+              <option value="">Selecione a unidade…</option>
+            </select>
+          </div>
+        </div>
+        <div class="nav-scroll" id="nav"></div>
+      </aside>
+      <main class="main">
+        <header class="page-head glass">
+          <div class="page-head-text">
+            <h1 id="pageTitle">Carregando…</h1>
+          </div>
+          <div class="head-actions">
+            <button type="button" class="btn btn-accent" id="btnSaveWorkbook">Salvar</button>
+            <button type="button" class="btn btn-soft" id="btnRefresh">Atualizar</button>
+          </div>
+        </header>
+        <div id="unitTabs" class="unit-tabs" hidden></div>
+        <section id="content" class="content"></section>
+      </main>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-box glass" id="modalBox">
+        <h2 class="modal-title" id="modalTitle">Confirmar</h2>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="form-actions modal-actions">
+          <button class="btn" id="modalCancel">Cancelar</button>
+          <button class="btn btn-accent" id="modalOk">Confirmar</button>
+        </div>
+      </div>
+    </div>
+    <div id="toast" class="toast"><span id="toastText"></span></div>
+  </div>
+</div>
+<script src="api.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

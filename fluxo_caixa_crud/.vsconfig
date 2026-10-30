@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "components": [
+    "Microsoft.VisualStudio.Component.CoreEditor",
+    "Microsoft.VisualStudio.Workload.ManagedDesktop",
+    "Microsoft.VisualStudio.Workload.Office",
+    "Microsoft.Net.Component.4.8.TargetingPack",
+    "Microsoft.Net.Component.4.8.SDK",
+    "Microsoft.VisualStudio.Component.NuGet",
+    "Microsoft.VisualStudio.Component.Roslyn.Compiler",
+    "Microsoft.VisualStudio.ComponentGroup.OfficeDeveloperTools",
+    "Microsoft.VisualStudio.Component.Vsto"
+  ]
+}
